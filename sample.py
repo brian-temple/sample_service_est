@@ -3,7 +3,11 @@
 # AWS Lambda-based system to collect fuel prices + material costs
 # and generate estimates using PostgreSQL joins
 
-import json import os import psycopg2 import requests from datetime import datetime
+import json 
+import os 
+import psycopg2 
+import requests from datetime 
+import datetime
 
 DB_HOST = os.environ.get("DB_HOST") DB_NAME = os.environ.get("DB_NAME") DB_USER = os.environ.get("DB_USER") DB_PASS = os.environ.get("DB_PASS")
 
